@@ -126,7 +126,8 @@ TplJudge.prototype = {
     const topHeadEndObj = {
       javascript: `/*\r\n${this.obj.str} */\r\n`,
       lua: `--[[\r\n${this.obj.str}--]]\r\n`,
-      python: `'''\r\n${this.obj.str}'''\r\n`,
+      // python: `'''\r\n${this.obj.str}'''\r\n`,
+      python: `${this.obj.str}\r\n`,
       html: `<!--\r\n${this.obj.str}-->\r\n`,
       vb: `'\r\n${this.obj.str}'\r\n`,
       shellscript: `###\r\n${this.obj.str}### \r\n`
@@ -137,7 +138,8 @@ TplJudge.prototype = {
   topMiddle: function () {
     const topMiddleObj = {
       '/^javascript$|^html$/': ` * ${this.atSymbol[0]}${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`,
-      '/^python|^lua$/': `${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`,
+      // '/^python|^lua$/': `${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`,
+      '/^python|^lua$/': `# ${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`,
       '/^vb$/': `' ${this.atSymbol[0]}${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`,
       '/^shellscript$/': ` # ${this.atSymbol[0]}${this.obj.key}${this.colon[0]}${this.obj.value}\r\n`
     }
