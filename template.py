@@ -1,8 +1,8 @@
 # coding=utf-8
 # 
-# Author: XXXX XXXX@stu.xidian.edu.cn
+# Author: XXXX XXXX@XXX.com
 # Date: 2025-03-25 15:23:02
-# LastEditors: XXXX XXXX@stu.xidian.edu.cn
+# LastEditors: XXXX XXXX@XXX.com
 # LastEditTime: 2025-03-27 12:11:15
 # FilePath: /project/PythonFileHeader/template.py
 # Copyright (c) 2025 by XXXX, All Rights Reserved.
